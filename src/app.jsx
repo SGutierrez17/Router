@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
 import Home from './home';
 import About from './about';
@@ -13,6 +13,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
+        <Route path='/profile' element={<Navigate to="/about" replace />}/>
         <Route path='/*' element={<NotFound />}/>
       </Routes>
     </Router>

@@ -11,6 +11,7 @@ export default function Contact() {
                 <ul>
                     <li><Link to="/">Inicio</Link></li>
                     <li><Link to="/about">Acerca de</Link></li>
+                    <li><Link to="/profile">Perfil</Link></li>
                 </ul>
             </nav>
         </div>

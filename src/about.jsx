@@ -11,6 +11,7 @@ export default function About() {
                 <ul>
                     <li><Link to="/">Inicio</Link></li>
                     <li><Link to="/contact">Contacto</Link></li>
+                    <li><Link to="/profile">Perfil</Link></li>
                 </ul>
             </nav>
         </div>
