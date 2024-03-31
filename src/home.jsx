@@ -1,0 +1,26 @@
+import React from 'react';
+
+import { Link, useNavigate } from 'react-router-dom';
+
+export default function Home() {
+const navigate = useNavigate(); 
+
+const handleClick = () => {
+    navigate('/contact'); 
+};
+
+    return (
+        <div>
+            <h1>Inicio</h1>
+            <p>Page of Home</p>
+            <nav>
+                <ul>
+                    <li><Link to="/about">Acerca de</Link></li>
+                    <li><Link to="/contact">Contacto</Link></li>
+                    <li><Link to="/profile">Perfil</Link></li>
+                </ul>
+            </nav>
+            <button onClick={handleClick}>Page of Contact</button>
+        </div>
+    )
+}
