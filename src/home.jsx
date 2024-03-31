@@ -1,8 +1,14 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Home() {
+const navigate = useNavigate(); 
+
+const handleClick = () => {
+    navigate('/contact'); 
+};
+
     return (
         <div>
             <h1>Inicio</h1>
@@ -14,6 +20,7 @@ export default function Home() {
                     <li><Link to="/profile">Perfil</Link></li>
                 </ul>
             </nav>
+            <button onClick={handleClick}>Page of Contact</button>
         </div>
     )
 }
